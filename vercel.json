@@ -7,14 +7,10 @@
     { "src": "/url", "dest": "/index.js" },
     { "src": "/static/(.*)", "dest": "/index.js" },
     { "src": "/:shortId", "dest": "/index.js" },
-    { "handle": "filesystem" },
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+    { "src": "/(.*)", "dest": "/index.js" }
   ],
   "server": {
-    "maxPayloadSize": "25mb", // Example setting, adjust as needed
+    "maxPayloadSize": "25mb",
     "healthCheck": "/healthz",
     "hostHeader": "x-vercel-id"
   }
