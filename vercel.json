@@ -6,12 +6,11 @@
   "routes": [
     { "src": "/url", "dest": "/index.js" },
     { "src": "/static/(.*)", "dest": "/index.js" },
-    { "src": "/:shortId", "dest": "/index.js" }
-  ],
-  "functions": {
-    "api/*": {
-      "memory": 512,
-      "maxDuration": 30
+    { "src": "/:shortId", "dest": "/index.js" },
+    { "handle": "filesystem" },
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
     }
-  }
+  ]
 }
