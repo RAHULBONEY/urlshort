@@ -1,10 +1,10 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "app.js" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    { "src": "BONEY/urlshortner/RAHUL/app.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/url", "dest": "BONEY/urlshortner/RAHUL/app.js" },
+    { "src": "/static/(.*)", "dest": "routes/staticRouter.js" }
+  ]
+}
