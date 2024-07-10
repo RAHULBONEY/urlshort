@@ -8,10 +8,5 @@
     { "src": "/static/(.*)", "dest": "/index.js" },
     { "src": "/:shortId", "dest": "/index.js" },
     { "src": "/(.*)", "dest": "/index.js" }
-  ],
-  "server": {
-    "maxPayloadSize": "25mb",
-    "healthCheck": "/healthz",
-    "hostHeader": "x-vercel-id"
-  }
+  ]
 }
