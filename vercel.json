@@ -13,10 +13,9 @@
       "dest": "/index.js"
     }
   ],
-  "functions": {
-    "api/*": {
-      "memory": 512,
-      "maxDuration": 30
-    }
+  "server": {
+    "maxPayloadSize": "25mb", // Example setting, adjust as needed
+    "healthCheck": "/healthz",
+    "hostHeader": "x-vercel-id"
   }
 }
